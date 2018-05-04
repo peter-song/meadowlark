@@ -1,0 +1,34 @@
+{
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "description": "node + express",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon meadowlark.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-song/meadowlark.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peter-song/meadowlark/issues"
+  },
+  "homepage": "https://github.com/peter-song/meadowlark#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express3-handlebars": "^0.5.2",
+    "nodemon": "^1.17.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "grunt": "^1.0.2",
+    "grunt-cafe-mocha": "^0.1.13",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-exec": "^3.0.0",
+    "mocha": "^5.1.1",
+    "zombie": "^6.1.2"
+  }
+}
