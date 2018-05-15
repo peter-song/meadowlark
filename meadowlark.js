@@ -6,12 +6,17 @@ const express = require('express');
 
 const {getFortune} = require('./lib/fortune');
 
-const app = express();
-
-app.set('port', process.env.PORT || 4000);
+const credentials = require('./credentials.js');
 
 // 设置 handlebars 视图引擎
 const handlebars = require('express3-handlebars').create({defaultLayout: 'main'});
+
+const app = express();
+
+app.use(require('cookie-parser')(credentials.cookieSecret));
+app.use(require('express-session')());
+
+app.set('port', process.env.PORT || 4000);
 app.engine('handlebars', handlebars.engine);
 
 app.use(express.static(__dirname + '/public'));

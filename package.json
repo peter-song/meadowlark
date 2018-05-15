@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/peter-song/meadowlark#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.3",
+    "express-session": "^1.15.6",
     "express3-handlebars": "^0.5.2",
     "nodemon": "^1.17.3"
   },
